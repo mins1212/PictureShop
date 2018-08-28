@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+ <generatorConfiguration>
+    <classPathEntry location="C:\Devtool\JDBC\mysql-connector-java-5.1.47.jar" />
+    <context id="SellDream" defaultModelType="flat">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/picture_shop" userId="root" password="1234" />
+
+        <javaModelGenerator targetPackage="com.portfolio.pictureshop.vo" targetProject="PictureShop/src/main/java" />
+        <sqlMapGenerator targetPackage="com.portfolio.pictureshop.mapper" targetProject="PictureShop/src/main/java" />
+
+        <table tableName="user_tbl" domainObjectName="User" />
+    </context>
+</generatorConfiguration>
